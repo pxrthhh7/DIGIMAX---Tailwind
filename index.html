@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" class="py-1 hover:underline" href="Assets/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+
+    <!-- INTER TIGHT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- INTER TIGHT -->
+
+    <!-- ICONIFY -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- ICONIFY -->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body class="font-intertight">
+    <!-- NAVBAR -->
+    <div class="w-full flex justify-center sticky top-0 left-0 bg-opacity-60 bg-zinc-100 backdrop-blur-lg z-10">
+        <div class="container px-[5%]">
+            <nav class="navbar flex justify-between items-center py-8">
+                <div class="navLeft">
+                    <a href="#"><img src="Assets/logo.png" alt="" class="w-40 h-6"></a>
+                </div>
+                <div class="navCenter flex gap-[24px] tracking-[1px]">
+                    <iconify-icon id="menubtn" class="flex lg:hidden text-[17px]" icon="ic:twotone-menu"
+                        style="color: black"></iconify-icon>
+                    <a href="#" class="hidden lg:flex font-[600]">HOME</a>
+                    <a href="#" class="hidden lg:flex focus:font-[600]">PROJECTS</a>
+                    <a href="#" class="hidden lg:flex focus:font-[600]">ABOUT US</a>
+                    <a href="#" class="hidden lg:flex focus:font-[600]">GALLERY</a>
+                </div>
+                <div class="navRight hidden lg:flex justify-center items-center">
+                    <a href="#"
+                        class="flex items-center gap-[5px] px-5 py-2 border border-gray-600 rounded-full bg-white hover:bg-gray-100 font-medium text-gray-800 tracking-[1px] shadow">Contact
+                        Us<iconify-icon class="text-[20px]" icon="mi:arrow-right-up"></iconify-icon></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- MOBILE NAV -->
+    <div class="mNav w-full flex justify-center lg:hidden bg-opacity-60 bg-zinc-200 backdrop-blur-lg fixed z-10">
+        <div class="container flex flex-col gap-3 px-[5%] py-3">
+            <a class="font-[600]" href="#">HOME</a>
+            <a class="focus:font-[600]" href="#">PROJECTS</a>
+            <a class="focus:font-[600]" href="#">ABOUT US</a>
+            <a class="focus:font-[600]" href="#">GALLERY</a>
+        </div>
+    </div>
+    <!-- MOBILE NAV END -->
+
+    <!-- SECTION 1 -->
+    <section class="hero flex justify-center bg-zinc-50">
+        <div class="container px-[5%] py-8 lg:py-0 text-center lg:text-left flex justify-center ">
+            <div class="heroLeft lg:w-1/2 xl:py-14 lg:py-8">
+                <p class="tracking-[2.4px]">OFFER FOR THE BEST INTERIOR</p>
+                <h2 class="py-4 text-3xl lg:text-4xl xl:text-6xl font-extrabold text-gray-800 tracking-[2px]">An
+                    aesthetic room is <br> given harmony</h2>
+                <p class="text-gray-500 pb-6 xl:pb-10 tracking-[1px]">
+                    Change your view with the best interior design.
+                    <br>
+                    We provide the best interior design for your Home.
+                    <br>
+                    Make every moment beautiful with the best interior design.
+                </p>
+                <a href="#"
+                    class="inline-flex items-center gap-[5px] px-8 py-3 rounded-full shadow-lg text-white bg-gray-950 hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2 tracking-[1px]">Get
+                    Started<iconify-icon class="text-[20px]" icon="mi:arrow-right-up"></iconify-icon></a>
+            </div>
+            <div class="heroRight lg:w-1/2">
+                <img class="absolute right-0 xl:h-[448px] xl:w-[700px] lg:h-[344px] lg:w-[500px] hidden lg:block"
+                    src="Assets/kitchen.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 1 END -->
+
+    <!-- SECTION 2 -->
+    <section class="section-2 py-4 bg-zinc-100 flex flex-col items-center">
+        <p class="py-4 text-center text-lg font-medium opacity-40 tracking-wider">Trusted by the world’s best companies
+        </p>
+        <div class="container px-[5%] flex flex-wrap justify-between items-center">
+            <img class="opacity-40" src="Assets/air-company-logo.png" alt="">
+            <img class="opacity-40" src="Assets/nike.png" alt="">
+            <img class="opacity-40" src="Assets/samsung.png" alt="">
+            <img class="opacity-40" src="Assets/amazon-pay.png" alt="">
+        </div>
+    </section>
+    <!-- SECTION 2 END -->
+
+    <!-- SECTION 3 -->
+    <section class="section-3 flex flex-col items-center">
+        <div class="container px-[5%] py-16">
+            <div class="sec3top flex justify-between items-center">
+                <a class="py-4 text-3xl font-extrabold text-gray-800 lg:text-5xl leading-tight tracking-[1px]" href="#">
+                    An aesthetic room is
+                    <br>
+                    given harmony
+                </a>
+                <p class="tracking-[1px] text-gray-400">WORLD AWARD</p>
+            </div>
+            <div class="sec3down grid lg:grid-cols-2">
+                <div>
+                    <img class="max-md:hidden" src="Assets/aboutfront.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="px-12 pb-4 tracking-[1px]">
+                        Digimax Classica is a company engaged in the field of interior design. We provide the best
+                        interior design for your home. We have been trusted by many people to design their homes. We
+                        have also received many awards from various countries for our work.
+                    </p>
+                    <div class="flex justify-center sm:justify-start px-12 pt-4 gap-x-4">
+                        <img class="h-[100px]" src="Assets/awards.png" alt="">
+                        <img class="h-[100px]" src="Assets/awards1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 3 END -->
+
+    <!-- SECTION 4 -->
+    <div class="section-4 grid gap-8 lg:gap-0 lg:grid-cols-4 md:grid-cols-2">
+        <div class="relative overflow-hidden group">
+            <div class="">
+                <img class="w-full" src="Assets/badroom.jpg" alt="">
+            </div>
+            <div class="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur tracking-[1px]">
+                <div class="flex justify-between pb-4">
+                    <p class="text-sm">BEDROOM SETUP</p>
+                    <span class="text-sm">01</span>
+                </div>
+                <a class="block text-xl font-semibold" href="#">Cossy Bedroom Setup</a>
+                <p class="py-4 text-gray-500">family drowing room with a clean and comfortable design for your family.
+                </p>
+                <a class="inline-flex items-center gap-2 font-medium" href="#">See Details <iconify-icon
+                        class="text-2xl" icon="mdi:arrow-right-thin" style="color: black"></iconify-icon></a>
+            </div>
+            <div
+                class="inset-0 flex-col items-center justify-end hidden gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 md:flex md:absolute group-hover:translate-y-full md:border-b-0 bg-zinc-100 tracking-[1.5px]">
+                <p class="-rotate-90">BEDROOM SETUP</p>
+                <span>01</span>
+            </div>
+        </div>
+        <div class="relative overflow-hidden group">
+            <div class="">
+                <img class="w-full" src="Assets/kitchen1.jpg" alt="">
+            </div>
+            <div class="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur tracking-[1px]">
+                <div class="flex justify-between pb-4">
+                    <p class="text-sm">KITCHING SETUP</p>
+                    <span class="text-sm">02</span>
+                </div>
+                <a class="block text-xl font-semibold" href="#">Neat & Clean Kitchen</a>
+                <p class="py-4 text-gray-500">family drowing room with a clean and comfortable design for your family.
+                </p>
+                <a class="inline-flex items-center gap-2 font-medium" href="#">See Details <iconify-icon
+                        class="text-2xl" icon="mdi:arrow-right-thin" style="color: black"></iconify-icon></a>
+            </div>
+            <div
+                class="inset-0 flex-col items-center justify-end hidden gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 md:flex md:absolute group-hover:translate-y-full md:border-b-0 bg-zinc-100 tracking-[1.5px]">
+                <p class="-rotate-90">KITCHING SETUP</p>
+                <span>02</span>
+            </div>
+        </div>
+        <div class="relative overflow-hidden group">
+            <div class="">
+                <img class="w-full" src="Assets/drowing.jpg" alt="">
+            </div>
+            <div class="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur tracking-[1px]">
+                <div class="flex justify-between pb-4">
+                    <p class="text-sm">DROWING SETUP</p>
+                    <span class="text-sm">03</span>
+                </div>
+                <a class="block text-xl font-semibold" href="#">Family Drowing Room</a>
+                <p class="py-4 text-gray-500">family drowing room with a clean and comfortable design for your family.
+                </p>
+                <a class="inline-flex items-center gap-2 font-medium" href="#">See Details <iconify-icon
+                        class="text-2xl" icon="mdi:arrow-right-thin" style="color: black"></iconify-icon></a>
+            </div>
+            <div
+                class="inset-0 flex-col items-center justify-end hidden gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 md:flex md:absolute group-hover:translate-y-full md:border-b-0 bg-zinc-100 tracking-[1.5px]">
+                <p class="-rotate-90">DROWING SETUP</p>
+                <span>03</span>
+            </div>
+        </div>
+        <div class="relative overflow-hidden group">
+            <div class="">
+                <img class="w-full" src="Assets/living.jpg" alt="">
+            </div>
+            <div class="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur tracking-[1px]">
+                <div class="flex justify-between pb-4">
+                    <p class="text-sm">LIVING SETUP</p>
+                    <span class="text-sm">04</span>
+                </div>
+                <a class="block text-xl font-semibold" href="#">Clean Family Room</a>
+                <p class="py-4 text-gray-500">family drowing room with a clean and comfortable design for your family.
+                </p>
+                <a class="inline-flex items-center gap-2 font-medium" href="#">See Details <iconify-icon
+                        class="text-2xl" icon="mdi:arrow-right-thin" style="color: black"></iconify-icon></a>
+            </div>
+            <div
+                class="inset-0 flex-col items-center justify-end hidden gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 md:flex md:absolute group-hover:translate-y-full md:border-b-0 bg-zinc-100 tracking-[1.5px]">
+                <p class="-rotate-90">LIVING SETUP</p>
+                <span>04</span>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION 4 END -->
+
+    <!-- SECTION 5 -->
+    <section class="section-5 flex flex-col items-center py-8 lg:py-28">
+        <div class="container px-[5%] grid lg:grid-cols-2">
+            <div>
+                <h1 class="py-4 text-4xl font-medium lg:text-6xl">Modern Classic</h1>
+            </div>
+            <div>
+                <h2 class="pb-6 text-xl font-bold tracking-wider">LUXURY DECOR TO CREATE COMFORT IN OUR HOME</h2>
+                <div class="grid grid-cols-2 text-gray-500 gap-x-8">
+                    <div>
+                        <p>With our passion for design and decor, we have created a collection of furniture and
+                            accessories that will help you create a comfortable and stylish home
+                        </p>
+                    </div>
+                    <div>
+                        <p>We create distinctive and unique designs that are inspired by the latest trends in interior
+                            design and fashion.</p>
+                        <a href="#" class="inline-flex items-center pt-4 text-lg font-bold text-black underline">View
+                            Gallery <iconify-icon class="text-[20px]" icon="mi:arrow-right-up"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper Container -->
+        <swiper-container class="mySwiper mt-10" space-between="30" free-mode="true" slides-per-view="3"
+            autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide><img src="Assets/swiper1.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="Assets/swiper2.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="Assets/swiper3.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="Assets/swiper4.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="Assets/swiper5.jpg" alt=""></swiper-slide>
+        </swiper-container>
+    </section>
+    <!-- SECTION 5 END -->
+
+    <!-- SECTION 6 -->
+    <section class="section-6 flex justify-center bg-zinc-100">
+        <div class="container px-[5%] items-center text-center border-b-2 lg:justify-between lg:flex py-14">
+            <div class="py-4">
+                <p class="text-2xl">Lets</p>
+                <h1 class="text-3xl font-medium lg:text-6xl tracking-[2px]">Get in touch</h1>
+            </div>
+            <a class="inline-flex items-center gap-[5px] px-6 py-3 rounded-full shadow-lg text-sm text-white bg-gray-950 hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2"
+                href="#">CONTACTUS<iconify-icon class="text-[20px]" icon="mi:arrow-right-up"></iconify-icon></a>
+        </div>
+    </section>
+    <!-- SECTION 6 END -->
+
+    <!-- FOOTER -->
+    <footer class="footer bg-zinc-100 flex flex-col items-center">
+        <div class="container px-[5%] py-14 lg:grid lg:grid-cols-2 tracking-[1px]">
+            <div class="grid lg:grid-cols-3 gap-4 pb-4 text-left lg:pb-0">
+                <div>
+                    <h2 class="pb-4 text-xl font-semibold">COMPANY</h2>
+                    <div class="flex flex-col">
+                        <a class="py-1 hover:underline" href="#">About US</a>
+                        <a class="py-1 hover:underline" href="#">Press</a>
+                        <a class="py-1 hover:underline" href="#">Careers</a>
+                        <a class="py-1 hover:underline" href="#">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="pb-4 text-xl font-semibold">DEVELOPMENT</h2>
+                    <div class="flex flex-col">
+                        <a class="py-1 hover:underline" href="#">Documentation</a>
+                        <a class="py-1 hover:underline" href="#">Api Reference</a>
+                        <a class="py-1 hover:underline" href="#">Changelog</a>
+                        <a class="py-1 hover:underline" href="#">Status</a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="pb-4 text-xl font-semibold">CONNECT</h2>
+                    <div class="flex flex-col">
+                        <a class="py-1 hover:underline" href="#">Instagram</a>
+                        <a class="py-1 hover:underline" href="#">Linkedin</a>
+                        <a class="py-1 hover:underline" href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 text-center lg:pt-0 lg:text-left border-t-2 lg:border-0 lg:pl-20">
+                <p class="pb-4 text-xl font-semibold tracking-[1px]">STAY UPDATED</p>
+                <div class="relative lg:max-w-sm">
+                    <input class="w-full h-14 px-4 pr-20 border-2 border-gray-300 rounded-full" type="email"
+                        placeholder="Email Address">
+                    <button
+                        class="absolute top-2 right-2 h-10 px-3 text-sm text-white bg-black rounded-full hover:border-2 hover:border-black hover:bg-white hover:text-black tracking-[1px]">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="pt-4 text-gray-500">By subscribing to our newsletter, you agree to receive emails from us.
+                    Your personal data will be stored and processed in accordance with our Privacy Policy and you can
+                    unsubscribe at any time.
+                </p>
+            </div>
+        </div>
+        <div class="w-full flex justify-center py-10 bg-zinc-200 tracking-[1px]">
+            <div class="container px-[5%] text-center text-gray-500 lg:flex lg:justify-between">
+                <p class="pb-4 lg:pb-0">&copy;2023 DIGIMAX.All rights reserved</p>
+                <div>
+                    <a class="p-4 hover:underline" href="#">Privacy</a>
+                    <a class="p-4 hover:underline" href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".mNav").hide();
+        $("#menubtn").click(function () {
+            $(".mNav").slideToggle()
+        })
+    })
+</script>
+
+</html>
